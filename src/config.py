@@ -69,6 +69,12 @@ UNCERTAIN = ["Don't know", "Not sure"]
 SUPPORT_QUESTIONS = [
     "benefits", "care_options", "wellness_program", "seek_help", "anonymity", "leave",
 ]
+# support_score counts supportive answers across those 6 questions. Five of them
+# are answered "Yes"; `leave` has its own positive values.
+SUPPORT_YES_QUESTIONS = [
+    "benefits", "care_options", "wellness_program", "seek_help", "anonymity",
+]
+LEAVE_POSITIVE = {"Somewhat easy", "Very easy"}
 UNCERTAINTY_QUESTIONS = SUPPORT_QUESTIONS + ["mental_vs_physical"]   # 7 columns, score 0-7
 
 # --------------------------------------------------------------------------
